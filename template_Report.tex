@@ -2,7 +2,7 @@
 
 
 % Title Page
-\title{Literature surrounding Pervasive Computing}
+\title{Literature surrounding Context Modelling in Pervasive Computing}
 \author{Garrett Jordan\\G00305145\\Research Methods}
 \date{December 4th, 2015}
 
@@ -17,7 +17,7 @@
 %
 
 \begin{abstract}
-Lee and Meier define the aims of pervasive computing as to embed computer system into every day life and environments without demanding the users explicit attention\cite{1}. Connected devices are now ubiquitous with even the most mundane appliances in our surroundings having sensors and network access. It is the intent of this paper to review the literature surrounding the challenges that this ubiquity brings to UNFINISHED.
+Lee and Meier define the aims of pervasive computing as to embed computer system into every day life and environments without demanding the users explicit attention\cite{0}. Connected devices are now ubiquitous with even the most mundane appliances in our surroundings having sensors and network access and we are close to Weiser vision of ubiquitous computing\cite{1}. It is the intent of this paper to review the literature surrounding the challenges that this ubiquity brings to UN
 \end{abstract}
 
 % Introduction section
@@ -31,17 +31,41 @@ The major challenges, outside of storage methods of the data, occur in the areas
 % 
 %
 
-\section*{Context}
+\section*{Context Awareness}
 The importance of context is emphasised by Castelli, Mamei, Rosi \& Zambonelli by stressing that  pervasive computing services should:
 \begin{quote}
 exploit contextual information both to adapt to user needs and to enable autonomic behaviour\cite{2}
 \end{quote} 
 
-The W4 model outlined by Castelli et al used Who, Where, Why and When to model contextual information from gathered data. These four 'Ws' are recorded as a set of key value pairs can more semantic information can by gleaned from the information. They also outline ways to graph the connections between other sets of 'Ws' through learned meaning. As an example if you spend most evenings and weekends in a particular location ( a Where) that can be inferred to be home.
-Illari et al\cite{4} maintain the emphasis on both context and Semantic meaning by arguing that:
+The W4 model outlined by Castelli et al used Who, Where, Why and When to model contextual information from gathered data. These four 'Ws' are recorded as a set of key value pairs can more semantic information can by gleaned from the information. They also outline ways to graph the connections between other sets of 'Ws' through learned meaning. As an example if you spend most evenings and weekends in a particular location ( a Where) that can be inferred to be home.\par
+Illari et al\cite{3} maintain the emphasis on both context and Semantic meaning by arguing that:
 \begin{quote}
-``exploiting semantic techniques in mobility data management can bring valuable benefits to many domains characterized by the mobility of users and moving objects in general, such as traffic management, urban dynamics analysis, ambient assisted living, emergency management, m-health, etc.''\cite{4}
+``exploiting semantic techniques in mobility data management can bring valuable benefits to many domains characterized by the mobility of users and moving objects in general, such as traffic management, urban dynamics analysis, ambient assisted living, emergency management, m-health, etc.''\cite{3}
+\end{quote}\par
+A group from AMBIT (Algorithms and Models for Building context-dependent Information delivery Tools)\footnote{http://www.agentgroup.unimore.it/ambit/} have further pushed for the development of applications and systems which are not only context aware but context dependent. Cabri, Leoncini and Martoglia \cite{5} from AMBIT argue that the area of context modelling has thus far been specific to the researchers needs and not tackling the more general model that can be universally exploited to produce diverse context-dependent systems and applications. This paper claims that the main limitations of current efforts in contextual modelling lie  \begin{quote}
+	``in the limited notion of context they adopt, in the almost complete absence of any attempt to model the semantics of the context''
+\end{quote} The authors also differentiate their definitions of context-aware applications and context dependent applications. For a system to be context-aware the system most have acquired knowledge of context in which the client is operating and also of the the client itself. A context-dependent system, on the other hand, is defined as a set of tools that that provide the client with services which are customized  according to the context in which the client is operating. This research is very interesting as it attempts to create a general, universal algorithm for context modelling in systems, particularly in the mobile and pervasive spheres.\par
+Quan Z. Sheng (Dr. Michael Sheng) of the University of Adelaide is a recognised expert in the field of contextually aware systems. He has numerous papers published in the sphere of context modelling and pervasive systems.\footnote{http://cs.adelaide.edu.au/~qsheng/} His importance to the sphere is reinforced by the fact he is cited by the vast majority of papers that I have read in investigation of this topic. Indeed he has authored or co-authored 52 articles on the ACM about context awareness alone. For this reason the following paragraphs will deal specifically with the literary input of Sheng.\par
+ As far back as 2005 Sheng and Benatallah introduced an entire UML-modelling language based around context awareness\cite{6}. They offered a syntex and notation which they believed could be used to design complex context-aware services. Although examples are offered it was not widely implemented, although neither has anything else since offered.\par
+ Yao and Sheng\cite{7} identified that with advances in sensors such as RFID, wireless sensor networks and web services there lay a challenge in how to organise, find,and manage pervasive and ubiquitous things. they argue that:
+ \begin{quote}
+ `` it
+ becomes quite challenging to discover explicitly the relationships
+ between heterogeneous things. Finally, correlations among things
+ are not obvious and difficult to discover. This is due to the fact that
+ things often exist in isolate settings and interconnections between
+ them are usually limited.''
 \end{quote}
+ They proposed that the solution to this was to automatically classify things based on context . Sheng and Yao built an algorithm for contextual relations which they called the RNUbiT. The algorithm used a three graphs to form a network of relations between context and "things". The graphs were:
+ \begin{enumerate}
+ 	\item A user-thing graph: Which maps the user to the "thing"
+ 	\item A time-thing graph: Which maps a time stamp to the "thing"
+ 	\item A location -thing graph: Which maps a location to the "thing"
+ \end{enumerate}
+ This is the equivalent of Who, When and Where in the W4 model\cite{2} with the thing being in effect the What. They include complex mathematical formulae to proove their theorem and illustrate accordingly but these are beyond the scope of a review and indeed make a simple concept obtuse and opaque.
+
+
+
 
 
 
@@ -53,12 +77,12 @@ Illari et al\cite{4} maintain the emphasis on both context and Semantic meaning 
 % 
 %
 
-\section{Open Linked Data}
+\section*{The works of }
 
 \begin{quote}
 ``The Linked Data paradigm
 involves practices to publish, share, and connect data on the
-Web, and offers a new way of data integration and interoperability.''\cite{3}
+Web, and offers a new way of data integration and interoperability.''\cite{10}
 \end{quote}
 
 
@@ -86,19 +110,34 @@ Security
 \medskip
 
 \begin{thebibliography}{99}
-\bibitem{1} 
+
+
+\bibitem{0} 
 Deirdre Lee and René Meier. 
 \textit{ A hybrid approach to context modelling in large-scale pervasive computing environments.}\\ 
 On Proceedings of the Fourth International ICST Conference on COMmunication System softWAre and middlewaRE (COMSWARE '09). ACM, New York, NY, USA, , Article 14 , 12 pages. DOI=http://dx.doi.org/10.1145/1621890.1621909.
 
+\bibitem{1}
+Mark Weiser. 1999. The computer for the 21st century. SIGMOBILE Mob. Comput. Commun. Rev. 3, 3 (July 1999), 3-11. DOI=http://dx.doi.org/10.1145/329124.329126
+
 \bibitem{2} 
 Gabriella Castelli, Marco Mamei, Alberto Rosi, and Franco Zambonelli. 2009. Extracting high-level information from location data: the W4 diary example. Mob. Netw. Appl. 14, 1 (February 2009), 107-119. DOI=http://dx.doi.org/10.1007/s11036-008-0104-y
- 
-\bibitem{3} 
-Theodore Dalamagas, Nikos Bikakis, George Papastefanatos, Yannis Stavrakas, and Artemis G. Hatzigeorgiou. 2012. Publishing life science data as linked open data: the case study of miRBase. In Proceedings of the First International Workshop on Open Data (WOD '12). ACM, New York, NY, USA, 70-77. DOI=http://dx.doi.org/10.1145/2422604.2422615
- 
-\bibitem{4}
+
+\bibitem{3}
 Sergio Ilarri, Dragan Stojanovic, and Cyril Ray. 2015. Semantic management of moving objects. Expert Syst. Appl. 42, 3 (February 2015), 1418-1435. DOI=http://dx.doi.org/10.1016/j.eswa.2014.08.057
+ 
+ 
+\bibitem{5}
+Giacomo Cabri, Mauro Leoncini, and Riccardo Martoglia. 2014. AMBIT: Towards an Architecture for the Development of Context-dependent Applications and Systems. In Proceedings of the 3rd International Conference on Context-Aware Systems and Applications (ICCASA '14), Wathiq Mansoor, Zakaria Maamar, and Fethi Rabhi (Eds.). ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering), ICST, Brussels, Belgium, Belgium, 64-68.
+
+\bibitem{6}
+Quan Z. Sheng and Boualem Benatallah. 2005. ContextUML: A UML-Based Modeling Language for Model-Driven Development of Context-Aware Web Services Development. In Proceedings of the International Conference on Mobile Business (ICMB '05). IEEE Computer Society, Washington, DC, USA, 206-212. DOI=http://dx.doi.org/10.1109/ICMB.2005.33
+
+\bibitem{7}
+Lina Yao and Quan Z. Sheng. 2012. Exploiting latent relevance for relational learning of ubiquitous things. In Proceedings of the 21st ACM international conference on Information and knowledge management (CIKM '12). ACM, New York, NY, USA, 1547-1551. DOI=http://dx.doi.org/10.1145/2396761.2398470
+
+\bibitem{10} 
+Theodore Dalamagas, Nikos Bikakis, George Papastefanatos, Yannis Stavrakas, and Artemis G. Hatzigeorgiou. 2012. Publishing life science data as linked open data: the case study of miRBase. In Proceedings of the First International Workshop on Open Data (WOD '12). ACM, New York, NY, USA, 70-77. DOI=http://dx.doi.org/10.1145/2422604.2422615
 
 
 
