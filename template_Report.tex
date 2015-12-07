@@ -17,7 +17,7 @@
 %
 
 \begin{abstract}
-Lee and Meier define the aims of pervasive computing as to embed computer system into every day life and environments without demanding the users explicit attention\cite{0}. Connected devices are now ubiquitous with even the most mundane appliances in our surroundings having sensors and network access and we are close to Weiser vision of ubiquitous computing\cite{1}. It is the intent of this paper to review the literature surrounding the challenges that this ubiquity brings to UN
+Lee and Meier define the aims of pervasive computing as to embed computer system into every day life and environments without demanding the users explicit attention\cite{0}. Connected devices are now ubiquitous with even the most mundane appliances in our surroundings having sensors and network access and we are close to Weiser vision of ubiquitous computing\cite{1}. It is the intent of this paper to review the literature surrounding the challenges that this ubiquity brings to interpreting data and  extracting information which is relevant. Data is easy to collect but information and knowledge less so.
 \end{abstract}
 
 % Introduction section
@@ -25,29 +25,42 @@ Lee and Meier define the aims of pervasive computing as to embed computer system
 %
 
 \section*{Introduction}
-The major challenges, outside of storage methods of the data, occur in the areas of data modelling and data protection. With vast rams of data collected it is important that the information can be garnered from it and that privacy and security are maintained.\\
+The major challenges, outside of storage methods of the data, occurs in the area of consistent data modelling. With the advent of Big Data and the shear volume of data collected it is important that high value information can be garnered from it. To do so requires awareness and meaning: Context and Semantics.\\
 
 % Context section
 % 
 %
 
-\section*{Context Awareness}
-The importance of context is emphasised by Castelli, Mamei, Rosi \& Zambonelli by stressing that  pervasive computing services should:
+\section*{Context and Semantics}
+Lee and Meier\cite{0} claim that for pervasive computing to be minimally invasive the system most be aware of and responsive to the context of the user and their environment. They maintain that Ontologies facilitate integration of semantics into systems by providing a model of the users environment. They provide this through a domain specific language called OWL (Web Ontology Language) and a context model called PCOnt. This model is a graph of relationships between Domains (objects such as data, space and system) with range constraints (time, quality, identity) and defined limits (equals, near etc.). These relationships are role based (has idetity, has Location, has time, has quality). This, rather complex graph, allows for a shared understanding of context. The authors apply it to a transport management system. While refreshing to see theory applied to a real world situation ( and an Irish one at that) the model model was obviously designed to mock the dublin transit management system and as such is a specific implementation. However the need to correalate identity, location, time and another quantitative factor is a common theme as we will see.\par
+%
+The importance of context is emphasised by Castelli, Mamei, Rosi \& Zambonelli\cite{2} by stressing that  pervasive computing services should:
 \begin{quote}
 exploit contextual information both to adapt to user needs and to enable autonomic behaviour\cite{2}
 \end{quote} 
 
 The W4 model outlined by Castelli et al used Who, Where, Why and When to model contextual information from gathered data. These four 'Ws' are recorded as a set of key value pairs can more semantic information can by gleaned from the information. They also outline ways to graph the connections between other sets of 'Ws' through learned meaning. As an example if you spend most evenings and weekends in a particular location ( a Where) that can be inferred to be home.\par
+%
 Illari et al\cite{3} maintain the emphasis on both context and Semantic meaning by arguing that:
 \begin{quote}
 ``exploiting semantic techniques in mobility data management can bring valuable benefits to many domains characterized by the mobility of users and moving objects in general, such as traffic management, urban dynamics analysis, ambient assisted living, emergency management, m-health, etc.''\cite{3}
 \end{quote}\par
+
+%
+
 A group from AMBIT (Algorithms and Models for Building context-dependent Information delivery Tools)\footnote{http://www.agentgroup.unimore.it/ambit/} have further pushed for the development of applications and systems which are not only context aware but context dependent. Cabri, Leoncini and Martoglia \cite{5} from AMBIT argue that the area of context modelling has thus far been specific to the researchers needs and not tackling the more general model that can be universally exploited to produce diverse context-dependent systems and applications. This paper claims that the main limitations of current efforts in contextual modelling lie  \begin{quote}
 	``in the limited notion of context they adopt, in the almost complete absence of any attempt to model the semantics of the context''
-\end{quote} The authors also differentiate their definitions of context-aware applications and context dependent applications. For a system to be context-aware the system most have acquired knowledge of context in which the client is operating and also of the the client itself. A context-dependent system, on the other hand, is defined as a set of tools that that provide the client with services which are customized  according to the context in which the client is operating. This research is very interesting as it attempts to create a general, universal algorithm for context modelling in systems, particularly in the mobile and pervasive spheres.\par
+\end{quote} The authors also differentiate their definitions of context-aware applications and context dependent applications. For a system to be context-aware the system most have acquired knowledge of context in which the client is operating and also of the the client itself. A context-dependent system, on the other hand, is defined as a set of tools that that provide the client with services which are customized  according to the context in which the client is operating. This research is very interesting as it attempts to create a general, universal algorithm for context modelling in systems, particularly in the mobile and pervasive spheres. The teams  discussion  on the implementation using semantic networks and graphs is interesting and relevant but is let down somewhat by their observation that this may be by achieved by using ``relational databases
+with efficient indexing structures''. That been said the scope of the paper was with industry partners at a regional/local level and the relational paradigm may have been the operational scope.\par
+
+%
+
 Quan Z. Sheng (Dr. Michael Sheng) of the University of Adelaide is a recognised expert in the field of contextually aware systems. He has numerous papers published in the sphere of context modelling and pervasive systems.\footnote{http://cs.adelaide.edu.au/~qsheng/} His importance to the sphere is reinforced by the fact he is cited by the vast majority of papers that I have read in investigation of this topic. Indeed he has authored or co-authored 52 articles on the ACM about context awareness alone. For this reason the following paragraphs will deal specifically with the literary input of Sheng.\par
- As far back as 2005 Sheng and Benatallah introduced an entire UML-modelling language based around context awareness\cite{6}. They offered a syntex and notation which they believed could be used to design complex context-aware services. Although examples are offered it was not widely implemented, although neither has anything else since offered.\par
- Yao and Sheng\cite{7} identified that with advances in sensors such as RFID, wireless sensor networks and web services there lay a challenge in how to organise, find,and manage pervasive and ubiquitous things. they argue that:
+As far back as 2005 Sheng and Benatallah introduced an entire UM-modelling language based around context awareness\cite{6}. They offered a syntax and notation which they believed could be used to design complex context-aware services.\par
+ 
+Indeed Sheng and colleagues from the University of Adelaide and others outlined an implementation of UM-modelling at the 2009 International Conference on Software Engineering\cite{7}. The concrete implementation they use is ContextUML and it provides a GUI that uses the UM-modellling language to allow designers to, in brief, define context in a web service architecture and implement it via wsdl and SOAP.
+ 
+Yao and Sheng\cite{8} identified that with advances in sensors such as RFID, wireless sensor networks and web services there lay a challenge in how to organise, find,and manage pervasive and ubiquitous things. they argue that:
  \begin{quote}
  `` it
  becomes quite challenging to discover explicitly the relationships
@@ -62,7 +75,19 @@ Quan Z. Sheng (Dr. Michael Sheng) of the University of Adelaide is a recognised 
  	\item A time-thing graph: Which maps a time stamp to the "thing"
  	\item A location -thing graph: Which maps a location to the "thing"
  \end{enumerate}
- This is the equivalent of Who, When and Where in the W4 model\cite{2} with the thing being in effect the What. They include complex mathematical formulae to proove their theorem and illustrate accordingly but these are beyond the scope of a review and indeed make a simple concept obtuse and opaque.
+ This is the equivalent of Who, When and Where in the W4 model\cite{2} with the thing being in effect the What. They include complex mathematical formulae to prove their theorem and illustrate accordingly but these are beyond the scope of a review and indeed make a simple concept obtuse and opaque.\par
+ %
+ As recently as August 2015 Sheng and Yao, again with colleagues from the University of Adelaide, outlined in conference proceedings how context-aware method of recommending points of interest (POI) to peers\cite{9}. In a extremely dense 4 page document the authors outline methods to improve the recommendation of POI by using contextual data. Personalisation is identified as a key factor in improving POI recommendation in location based services. Although this document is short, and extremely maths heavy, it is notable that the authors identified social networks as a key contextual field. The authors used brightkite\footnote{http://snap.stanford.edu/data/loc-brightkite.html}  a, now defunct, location based social-network a la Foursquare\footnote{https://foursquare.com/} using shared check-ins. The article identified three key patterns for user checkins:
+ \begin{enumerate}
+ 	\item Check-ins showed a clustering around a users usual locations e.g. their POI (Home/School/Work etc.).
+ 	\item The users social network had an influence on where users checked in.They found most users had less then 10\% overlap with their social network. Think of this like showing off.
+ 	\item Check-in were time relevant. Check-ins to diners/cafés etc. tended to happen at meal times while nightclubs and bars were checked in at night.
+ \end{enumerate}
+ They refer to this as ``rich spatial-temporal-social
+ information '' and maintain that it makes the creation of context-aware recommendations possible. On further examination we can, if we take social information as who and what, we again encounter the 4 Ws' of Who, What, Where and When. 
+ It should be  noted that he use of context and semantics in a recommendation engine was also analysed in an earlier(2012) article by a team fro the University of Manchester and IBM\cite{10}. This article is longer, yet equally opaque, and uses linked data tools (RDF) and SOAP web services, along with a lot of mathematical formulae, to outline a feedback driven design. This is less automatic then the implementation laid out by Sheng, Yao et al. as it relies on user/client feedback as opposed to data directly gathered from pervasive systems.
+ 
+ 
 
 
 
@@ -73,26 +98,11 @@ Quan Z. Sheng (Dr. Michael Sheng) of the University of Adelaide is a recognised 
 
 
 
-% Linked Data section
-% 
-%
-
-\section*{The works of }
-
-\begin{quote}
-``The Linked Data paradigm
-involves practices to publish, share, and connect data on the
-Web, and offers a new way of data integration and interoperability.''\cite{10}
-\end{quote}
 
 
 
-% Security section
-% 
-%
 
-\section{Security}
-Security
+
 
 
 % Conclusion section
@@ -134,10 +144,16 @@ Giacomo Cabri, Mauro Leoncini, and Riccardo Martoglia. 2014. AMBIT: Towards an A
 Quan Z. Sheng and Boualem Benatallah. 2005. ContextUML: A UML-Based Modeling Language for Model-Driven Development of Context-Aware Web Services Development. In Proceedings of the International Conference on Mobile Business (ICMB '05). IEEE Computer Society, Washington, DC, USA, 206-212. DOI=http://dx.doi.org/10.1109/ICMB.2005.33
 
 \bibitem{7}
+Quan Z. Sheng, Sam Pohlenz, Jian Yu, Hoi S. Wong, Anne H. H. Ngu, and Zakaria Maamar. 2009. ContextServ: A platform for rapid and flexible development of context-aware Web services. In Proceedings of the 31st International Conference on Software Engineering (ICSE '09). IEEE Computer Society, Washington, DC, USA, 619-622. DOI=http://dx.doi.org/10.1109/ICSE.2009.5070570
+
+\bibitem{8}
 Lina Yao and Quan Z. Sheng. 2012. Exploiting latent relevance for relational learning of ubiquitous things. In Proceedings of the 21st ACM international conference on Information and knowledge management (CIKM '12). ACM, New York, NY, USA, 1547-1551. DOI=http://dx.doi.org/10.1145/2396761.2398470
 
+\bibitem{9}
+Lina Yao, Quan Z. Sheng, Yongrui Qin, Xianzhi Wang, Ali Shemshadi, and Qi He. 2015. Context-aware Point-of-Interest Recommendation Using Tensor Factorization with Social Regularization. In Proceedings of the 38th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '15). ACM, New York, NY, USA, 1007-1010. DOI=http://dx.doi.org/10.1145/2766462.2767794
+
 \bibitem{10} 
-Theodore Dalamagas, Nikos Bikakis, George Papastefanatos, Yannis Stavrakas, and Artemis G. Hatzigeorgiou. 2012. Publishing life science data as linked open data: the case study of miRBase. In Proceedings of the First International Workshop on Open Data (WOD '12). ACM, New York, NY, USA, 70-77. DOI=http://dx.doi.org/10.1145/2422604.2422615
+Liwei Liu, Freddy Lecue, and Nikolay Mehandjiev. 2013. Semantic content-based recommendation of software services using context. ACM Trans. Web 7, 3, Article 17 (September 2013), 20 pages. DOI=http://dx.doi.org/10.1145/2516633.2516639
 
 
 
