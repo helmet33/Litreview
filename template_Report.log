@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  7 DEC 2015 02:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  7 DEC 2015 03:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -48,28 +48,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Overfull \hbox (22.27841pt too wide) in paragraph at lines 37--38
+Overfull \hbox (22.27841pt too wide) in paragraph at lines 38--39
 []\OT1/cmr/m/n/10 The im-por-tance of con-text is em-pha-sised by Castelli, Mam
 ei, Rosi & Zambonelli[[]]
  []
 
+[1]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 51.
+(Font)              <5> on input line 52.
 
-Overfull \hbox (6.88739pt too wide) in paragraph at lines 51--51
+Overfull \hbox (6.88739pt too wide) in paragraph at lines 52--52
 []\OT1/cmr/m/n/10 A group from AM-BIT (Al-go-rithms and Mod-els for Build-ing c
 ontext-dependent
  []
 
-[1]
-Overfull \hbox (0.61176pt too wide) in paragraph at lines 59--59
+
+Overfull \hbox (0.61176pt too wide) in paragraph at lines 60--60
 []\OT1/cmr/m/n/10 As far back as 2005 Sheng and Be-na-tal-lah in-tro-duced an e
 n-tire UM-modelling
  []
@@ -81,45 +77,45 @@ Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 
-Underfull \hbox (badness 3068) in paragraph at lines 126--129
+Underfull \hbox (badness 3068) in paragraph at lines 127--130
 \OT1/cmr/m/n/10 On Pro-ceed-ings of the Fourth In-ter-na-tional ICST Con-fer-en
 ce on
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 126--129
+Underfull \hbox (badness 3219) in paragraph at lines 127--130
 \OT1/cmr/m/n/10 COM-mu-ni-ca-tion Sys-tem soft-WAre and mid-dle-waRE (COM-SWARE
 
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 126--129
+Underfull \hbox (badness 5832) in paragraph at lines 127--130
 \OT1/cmr/m/n/10 '09). ACM, New York, NY, USA, , Ar-ti-cle 14 , 12 pages.
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 131--132
+Underfull \hbox (badness 6204) in paragraph at lines 132--133
 []\OT1/cmr/m/n/10 Mark Weiser. 1999. The com-puter for the 21st cen-tury. SIG-
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 131--132
+Underfull \hbox (badness 2671) in paragraph at lines 132--133
 \OT1/cmr/m/n/10 MO-BILE Mob. Com-put. Com-mun. Rev. 3, 3 (July 1999), 3-11.
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 134--135
+Underfull \hbox (badness 1303) in paragraph at lines 135--136
 \OT1/cmr/m/n/10 di-ary ex-am-ple. Mob. Netw. Appl. 14, 1 (Febru-ary 2009), 107-
 119.
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 147--148
+Underfull \hbox (badness 1748) in paragraph at lines 148--149
 []\OT1/cmr/m/n/10 Quan Z. Sheng, Sam Pohlenz, Jian Yu, Hoi S. Wong, Anne H.
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 147--148
+Underfull \hbox (badness 1067) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 H. Ngu, and Za-karia Maa-mar. 2009. Con-textServ: A plat-form f
 or
  []
@@ -127,36 +123,36 @@ or
 [5
 
 ]
-Underfull \hbox (badness 3108) in paragraph at lines 150--151
+Underfull \hbox (badness 3108) in paragraph at lines 151--152
 []\OT1/cmr/m/n/10 Lina Yao and Quan Z. Sheng. 2012. Ex-ploit-ing la-tent rel-e-
 vance
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 150--151
+Underfull \hbox (badness 1831) in paragraph at lines 151--152
 \OT1/cmr/m/n/10 for re-la-tional learn-ing of ubiq-ui-tous things. In Pro-ceed-
 ings of the
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 150--151
+Underfull \hbox (badness 2726) in paragraph at lines 151--152
 \OT1/cmr/m/n/10 21st ACM in-ter-na-tional con-fer-ence on In-for-ma-tion and kn
 owl-edge
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 150--151
+Underfull \hbox (badness 1642) in paragraph at lines 151--152
 \OT1/cmr/m/n/10 man-age-ment (CIKM '12). ACM, New York, NY, USA, 1547-1551.
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 156--157
+Underfull \hbox (badness 2435) in paragraph at lines 157--158
 []\OT1/cmr/m/n/10 Liwei Liu, Freddy Lecue, and Niko-lay Mehand-jiev. 2013. Se-m
 an-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 156--157
+Underfull \hbox (badness 2401) in paragraph at lines 157--158
 \OT1/cmr/m/n/10 ACM Trans. Web 7, 3, Ar-ti-cle 17 (Septem-ber 2013), 20 pages.
  []
 
@@ -168,7 +164,7 @@ Here is how much of TeX's memory you used:
  3859 multiletter control sequences out of 15000+600000
  8540 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 24i,8n,17p,1194b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 24i,8n,17p,1194b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
@@ -179,7 +175,7 @@ fonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmti10.pfb>
-Output written on template_Report.pdf (8 pages, 122590 bytes).
+Output written on template_Report.pdf (8 pages, 122934 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
